@@ -84,7 +84,7 @@ main {
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;;
 }
 
 .page-section {
@@ -105,10 +105,14 @@ main {
   line-height: 1.1;
 }
 
+.avatar-of-me {
+  display: flex;
+  flex-direction: row;
+}
+
 img {
-    width: 2.5%;
-    height: auto;
-    max-width: 100%;
+    max-width: 200px;
+    max-height: 200px;
   }
 
 .page-section > div {
@@ -140,12 +144,14 @@ img {
   background-size: 150%;
   transition: all 0.5s;
   font-size: 0.9rem;
+  border-radius: 90%;
 }
 
-/* feature first portfolio item */
+/*portfolio items*/
 .flex-item:first-child {
     min-height: 200px;
     flex-basis: 100%;
+    border-radius: 90%;
 }
 
 .flex-item:hover {
@@ -173,7 +179,7 @@ img {
   color: var(--first);
   padding: 5px;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style: normal;
   transition: all 0.25s ease-in;
   margin: 0 0.2rem 0.1rem;
